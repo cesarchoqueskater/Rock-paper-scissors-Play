@@ -16,37 +16,36 @@
     <div class="display-content">
         <h2 class="welcome-text header">Bienvenido al juego Piedra, Papel o Tijera</h2>
         <div class="content left">
-            <img src="img/ImageBackground.png" class="w-140" alt="ImageBackground.png">
+            <img src="img/ImageBackground.png" class="w-size-plus" alt="ImageBackground.png">
             <p>Jugador</p>
         </div>
         <div class="content middle">
-            <img src="img/VS.png" class="w-100" alt="VS.png">
+            <img src="img/VS.png" class="w-size-middle" alt="VS.png">
         </div>
         <div class="content right">
-            <img src="img/ImageBackground.png" class="w-140" alt="ImageBackground.png">
+            <img src="img/ImageBackground.png" class="w-size-plus" alt="ImageBackground.png">
             <p>Maquina</p>
         </div>
-        <div class="content title-information">
-            <h2>
-                Por favor selecciona solo una opción
-            </h2>
+        <div class="content selection-information">
+            <div class="content result"></div>
+            <h2>Por favor selecciona solo una opción</h2>
+            <div class="content three-options">
+                <button id="rock-choose" class="image-choose">
+                    <img src="img/Piedra.png" class="w-size-minus" alt="Piedra.png">
+                    <p>Piedra</p>
+                </button>
+                <button id="paper-choose" class="image-choose">
+                    <img src="img/Papel.png" class="w-size-minus" alt="Papel.png">
+                    <p>Papel</p>
+                </button>
+                <button id="scissors-choose" class="image-choose">
+                    <img src="img/Tijera.png" class="w-size-minus" alt="Tijera.png">
+                    <p>Tijera</p>
+                </button>
+            </div>
         </div>
-        <div class="content three-options information">
-            <div id="rock-choose" class="image-choose">
-                <img src="img/Piedra.png" class="w-100" alt="Piedra.png">
-                <p>Piedra</p>
-            </div>
-            <div id="paper-choose" class="image-choose">
-                <img src="img/Papel.png" class="w-100" alt="Papel.png">
-                <p>Papel</p>
-            </div>
-            <div id="scissors-choose" class="image-choose">
-                <img src="img/Tijera.png" class="w-100" alt="Tijera.png">
-                <p>Tijera</p>
-            </div>
-        </div>
-        <div class="content button-play footer">
-            <button class="button-play-design">Jugar</button>
+        <div class="content button-play-again footer">
+            <button class="button-play-design">Jugar de Nuevo</button>
         </div>
     </div>
 </body>

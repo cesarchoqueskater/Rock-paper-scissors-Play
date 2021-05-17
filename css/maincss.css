@@ -8,7 +8,7 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 200px);
     grid-template-rows: repeat(4, 1fr);
-    grid-template-areas: "header header header""left middle right""title-information title-information title-information""information information information""footer footer footer";
+    grid-template-areas: "header header header""left middle right" " selection-information selection-information selection-information""footer footer footer";
     justify-items: center;
     justify-content: center;
     align-items: center;
@@ -17,7 +17,7 @@ body {
 }
 
 .content {
-    padding: 20px;
+    padding: 20px 0;
 }
 
 .welcome-text {
@@ -30,24 +30,34 @@ body {
     gap: 20px;
 }
 
+.three-options button {
+    border: none;
+    background: transparent;
+}
+
 .image-choose {
     cursor: pointer;
 }
 
 .image-choose img:hover {
-    width: 120px;
+    width: 200px;
 }
 
-.w-100 {
-    width: 100px;
+.w-size-minus {
+    width: 150px;
 }
 
-.w-140 {
-    width: 140px;
+.w-size-plus {
+    width: 180px;
+}
+
+.w-size-middle {
+    width: 110px;
 }
 
 .header {
     grid-area: header;
+    font-size: 2em;
 }
 
 .left {
@@ -67,13 +77,8 @@ body {
     grid-area: right;
 }
 
-.title-information {
-    grid-area: title-information;
-    align-self: end;
-}
-
-.information {
-    grid-area: information;
+.selection-information {
+    grid-area: selection-information;
 }
 
 .footer {
@@ -94,18 +99,37 @@ body {
     align-self: start;
 }
 
+.result {
+    font-size: 4em;
+    color: #63264f;
+    font-weight: bold;
+}
+
 @media (max-width:550px) {
-    .header {
+    .selection-information h2 {
         font-size: 1em;
     }
     .display-content {
-        grid-template-areas: "header header header"" . left . "". middle . "" . right . " "title-information title-information title-information " " information information information "" footer footer footer ";
-        grid-template-rows: repeat(4, 150px);
+        grid-template-areas: "header header header " " left middle right " "selection-information selection-information selection-information " " footer footer footer ";
+        grid-template-columns: repeat(3, 110px);
+        grid-template-rows: repeat(4, 1fr);
+        /* grid-template-rows: 150px 220px 300px 50px; */
     }
-    .w-140 {
-        width: 100px;
+    .left .w-size-plus,
+    .right .w-size-plus {
+        width: 140px;
+    }
+    .middle .w-size-minus {
+        width: 60px;
+    }
+    .w-size-minus {
+        width: 120px;
     }
     .three-options {
         gap: 10px;
+    }
+    .button-play-design {
+        padding: .375em 1.75em;
+        font-size: 1.5rem;
     }
 }

@@ -35,13 +35,23 @@ body {
     background: transparent;
 }
 
+.img-disabled {
+    opacity: 0.5;
+    cursor: default;
+}
+
 .image-choose {
     cursor: pointer;
 }
 
-.image-choose img:hover {
-    width: 200px;
-}
+
+/* .image-choose img:hover {
+    width: 170px;
+    transition: width 0.6s ease, height 0.6s ease;
+    border: 5px solid transparent;
+    border-color: #63264f;
+    border-radius: 100%;
+} */
 
 .w-size-minus {
     width: 150px;
@@ -93,6 +103,7 @@ body {
     border-radius: .25rem;
     font-size: 2rem;
     cursor: pointer;
+    display: none;
 }
 
 .content:last-of-type {
@@ -117,9 +128,9 @@ body {
     }
     .left .w-size-plus,
     .right .w-size-plus {
-        width: 140px;
+        width: 120px;
     }
-    .middle .w-size-minus {
+    .middle .w-size-middle {
         width: 60px;
     }
     .w-size-minus {

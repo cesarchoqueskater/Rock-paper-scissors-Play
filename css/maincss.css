@@ -14,6 +14,7 @@ body {
     align-items: center;
     height: 100vh;
     text-align: center;
+    padding: 0 10px;
 }
 
 .content {
@@ -134,7 +135,7 @@ body {
         width: 60px;
     }
     .w-size-minus {
-        width: 120px;
+        width: 100px;
     }
     .three-options {
         gap: 10px;

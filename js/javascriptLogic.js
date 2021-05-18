@@ -14,7 +14,7 @@ function selectOption(optionChoose) {
     btn_newplay.style.display = "block";
 }
 
-//Devuelve de forma aleatoria  
+//Devuelve de forma aleatoria valores establecidos como Piedra,Papel o Tijera
 function randomObject() {
     var objects = ['Piedra', 'Papel', 'Tijera'];
     var randomObject = objects[Math.floor(Math.random() * objects.length)];

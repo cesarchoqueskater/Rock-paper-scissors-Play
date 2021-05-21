@@ -1,7 +1,23 @@
+:root {
+    --circle-border-radius: #63264f;
+    --color-text: #fff;
+    --text-result: #63264f;
+    --button-play-design: #63264f;
+    --p-text: #000;
+    --color-text-header: #fff;
+    --body-background: #e6e6e6;
+    --white: #fff;
+}
+
 body {
     font-family: 'Fira Sans', sans-serif;
     margin: 0;
     padding: 0;
+    background: var(--body-background);
+}
+
+.p-text {
+    color: var(--p-text);
 }
 
 .display-content {
@@ -23,6 +39,7 @@ body {
 
 .welcome-text {
     font-weight: bold;
+    color: var(--color-text--header);
 }
 
 .three-options {
@@ -45,12 +62,17 @@ body {
     cursor: pointer;
 }
 
+.border-image {
+    border-radius: 100px;
+    border: 2px solid --white;
+}
+
 
 /* .image-choose img:hover {
     width: 170px;
     transition: width 0.6s ease, height 0.6s ease;
     border: 5px solid transparent;
-    border-color: #63264f;
+    border-color: var(----circle-border-radius);
     border-radius: 100%;
 } */
 
@@ -81,7 +103,7 @@ body {
 
 .middle img {
     border-radius: 100px;
-    border: 6px solid #63264f;
+    border: 6px solid var(--circle-border-radius);
 }
 
 .right {
@@ -97,8 +119,8 @@ body {
 }
 
 .button-play-design {
-    background: #63264F;
-    color: #fff;
+    background: var(--button-play-design);
+    color: var(--color-text);
     padding: .375em 4.75em;
     border: 1px solid transparent;
     border-radius: .25rem;
@@ -113,7 +135,7 @@ body {
 
 .result {
     font-size: 4em;
-    color: #63264f;
+    color: var(--text-result);
     font-weight: bold;
 }
 
@@ -143,5 +165,17 @@ body {
     .button-play-design {
         padding: .375em 1.75em;
         font-size: 1.5rem;
+    }
+}
+
+@media ( prefers-color-scheme: dark) {
+     :root {
+        --circle-border-radius: #999999;
+        --color-text: #4b39ef;
+        --text-result: #4b39ef;
+        --button-play-design: #1e2428;
+        --color-text--header: #fff;
+        --p-text: #fff;
+        --body-background: #101213;
     }
 }

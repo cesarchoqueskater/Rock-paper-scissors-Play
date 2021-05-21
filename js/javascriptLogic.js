@@ -31,7 +31,7 @@ function compareFunction(compareSelect) {
     // console.log("Variable 2 " + varRandomObject);
     switch (compareSelect != "") {
         case (compareSelect == varRandomObject):
-            resultCompare.innerHTML = "Esto es un empate";
+            resultCompare.innerHTML = "¡¡Esto es un empate!!";
             break;
         case (compareSelect == "Piedra" && varRandomObject == "Tijera"):
             resultCompare.innerHTML = "¡¡Ganaste!! con " + compareSelect + " vs " + varRandomObject;
@@ -69,15 +69,15 @@ Tijera.addEventListener("click", function() {
 
 //Boton para permitir volver a jugar
 btn_newplay.addEventListener("click", function() {
-    var defaultImage = "img/ImageBackground.png";
+    var defaultImage = "img/ImageBackground";
     console.log("vae");
-    document.getElementById("option-choose-play").src = defaultImage;
-    document.getElementById("option-choose-computer").src = defaultImage;
+    document.getElementById("option-choose-play").src = defaultImage + "-User.png";
+    document.getElementById("option-choose-computer").src = defaultImage + "-Computer.png";
     btn_newplay.style.display = "none";
     btn_choose.classList.remove("img-disabled");
     Piedra.disabled = false;
     Papel.disabled = false;
     Tijera.disabled = false;
-    Header_information.style.color = "black";
+    Header_information.style.color = "var(--p-text)";
     resultCompare.innerHTML = "";
 });

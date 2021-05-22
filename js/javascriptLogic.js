@@ -56,7 +56,7 @@ function compareFunction(compareSelect) {
     Piedra.disabled = true;
     Papel.disabled = true;
     Tijera.disabled = true;
-    Header_information.style.color = "var(--text-grey)";
+    Header_information.classList.add("text-start-after");
 }
 
 Piedra.addEventListener("click", function() {
@@ -86,6 +86,6 @@ btn_newplay.addEventListener("click", function() {
     Tijera.disabled = false;
     document.getElementById("option-left-box").classList.remove("background-color-new");
     document.getElementById("option-right-box").classList.remove("background-color-new");
-    Header_information.style.color = "var(--p-text)";
+    Header_information.classList.remove("text-start-after");
     resultCompare.innerHTML = "";
 });

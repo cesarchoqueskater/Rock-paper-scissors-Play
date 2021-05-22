@@ -137,6 +137,10 @@ body {
     display: none;
 }
 
+.text-start-after {
+    color: var(--text-grey) !important;
+}
+
 .w-size-minus {
     width: 50%;
     height: 100%;
@@ -156,6 +160,7 @@ body {
 
 .text-start {
     grid-area: text-start;
+    color: var(--p-text);
 }
 
 .result {
@@ -204,7 +209,7 @@ body {
     }
     .display-content {
         grid-template-columns: repeat(3, 95px);
-        grid-template-rows: 250px 220px 150px 150px 180px 100px;
+        grid-template-rows: 250px 220px 150px 200px 300px 150px;
         grid-template-areas: "header header header" "left-box . right-box" "text-start text-start text-start" "content-btn-rock content-btn-paper content-btn-scissors" "result result result " " btn-footer btn-footer btn-footer";
         /* height: 100%; */
     }

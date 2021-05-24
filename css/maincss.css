@@ -38,11 +38,18 @@ body {
     font-weight: bold;
 }
 
+.p-text-choose {
+    color: var(--p-text);
+    -webkit-text-fill-color: var(--p-text);
+    font-size: 15px;
+    font-weight: bold;
+}
+
 .display-content {
     display: grid;
-    grid-template-columns: 200px 200px 1fr 1fr 1fr;
+    grid-template-columns: 200px 200px 200px 1fr 1fr;
     grid-template-rows: repeat(4, 1fr);
-    grid-template-areas: "header header header left-box right-box" "text-start text-start . left-box right-box" "content-btn-rock content-btn-paper content-btn-scissors result result" " . . . btn-footer btn-footer";
+    grid-template-areas: "header header header left-box right-box" "text-start text-start . left-box right-box" "content-btn-rock content-btn-paper content-btn-scissors result result" "btn-footer btn-footer btn-footer . .";
     justify-items: center;
     justify-content: center;
     align-items: center;
@@ -68,7 +75,7 @@ body {
 .content-btn-rock,
 .content-btn-paper,
 .content-btn-scissors {
-    justify-self: left;
+    /* justify-self: left; */
     width: 155px;
     height: 155px;
     border: none;
@@ -110,8 +117,12 @@ body {
     background: var(--background-box-start);
     border-radius: 22px;
     text-align: center;
-    margin-top: 65%;
+    margin-top: 40%;
     box-shadow: -1px 0px 9px 0px var(--shadow-box);
+}
+
+.left-box {
+    justify-self: right;
 }
 
 .result {
@@ -123,6 +134,7 @@ body {
 
 .btn-footer {
     text-align: center;
+    justify-content: center;
 }
 
 .button-play-design {
@@ -209,7 +221,7 @@ body {
     }
     .display-content {
         grid-template-columns: repeat(3, 95px);
-        grid-template-rows: 250px 220px 150px 200px 300px 150px;
+        grid-template-rows: 250px 220px 100px 180px 250px 150px;
         grid-template-areas: "header header header" "left-box . right-box" "text-start text-start text-start" "content-btn-rock content-btn-paper content-btn-scissors" "result result result " " btn-footer btn-footer btn-footer";
         /* height: 100%; */
     }

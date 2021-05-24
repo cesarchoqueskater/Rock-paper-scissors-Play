@@ -16,8 +16,3 @@ Pulsa aqui para ver el **[Demo](https://cesarchoqueskater.github.io/Rock-paper-s
 
 [<img src="screenshots/screen_mobile_play.png" width="45%"/>](screenshots/screen_mobile_play.png)
 
-
-  
-
-**Nota :** 
-La imagen de los iconos son de internet.

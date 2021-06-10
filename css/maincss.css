@@ -68,6 +68,10 @@ body {
     font-size: 72px;
 }
 
+.content-text-start {
+    color: var(--p-text);
+}
+
 .text-start {
     justify-self: left;
 }
@@ -150,7 +154,7 @@ body {
 }
 
 .text-start-after {
-    color: var(--text-grey) !important;
+    color: var(--text-grey);
 }
 
 .w-size-minus {
@@ -172,7 +176,6 @@ body {
 
 .text-start {
     grid-area: text-start;
-    color: var(--p-text);
 }
 
 .result {
